@@ -15,8 +15,8 @@ public class JSONController {
         return "success";
     }
 
-    @GetMapping
-    public String getJson() {
-
+    @GetMapping("get")
+    public UserDTO getJson() {
+        return new UserDTO();
     }
 }
